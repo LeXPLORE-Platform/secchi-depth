@@ -1,0 +1,1 @@
+{"time": {"simple": {"numeric": "True", "bounds": [1514764800, "now"]}, "advanced": {}}, "secchi": {"simple": {"numeric": "True", "bounds": [0, 80]}, "advanced": {}}, "lowering": {"simple": {"numeric": "True", "bounds": [0, 100]}, "advanced": {}}, "raising": {"simple": {"numeric": "True", "bounds": [0, 100]}, "advanced": {}}}
