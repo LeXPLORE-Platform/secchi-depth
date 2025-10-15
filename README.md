@@ -7,7 +7,7 @@ The data is used and displayed on the [Datalakes website](https://www.datalakes-
 
 ## Sensors
 
-The CTD is an instrument used to measure the conductivity, temperature, and pressure of the lake water (the D stands for "depth," which is closely related to pressure).
+Secchi depth measurements are taken manually with a secchi disk. 
 
 ## Installation
 
@@ -71,4 +71,9 @@ quality checks and further investigation is needed, quality flag "0" indicates t
 ## Quality assurance
 
 Quality checks include but are not limited to range validation, data type checking and flagging missing data.
-The automatic quality check is controlled by the package [Envass](https://pypi.org/project/envass/). The specific methods implemented for this dataset are listed in `notes/quality_assurance.json`. 
+The automatic quality check is controlled by the package [Envass](https://pypi.org/project/envass/). The specific methods implemented for this dataset are listed in `notes/quality_assurance.json`.
+
+[cc-by]: http://creativecommons.org/licenses/by/4.0/
+[cc-by-shield]: https://img.shields.io/badge/License-CC%20BY%204.0-g.svg?label=Data%20License
+[mit-by]: https://opensource.org/licenses/MIT
+[mit-by-shield]: https://img.shields.io/badge/License-MIT-g.svg?label=Code%20License
