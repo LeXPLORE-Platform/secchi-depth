@@ -44,10 +44,10 @@ def merge_files(output_folder, new_files):
     for file in new_files:
         try:
             df_new = pd.read_csv(file, sep=";", header=None, skiprows=1, encoding="ISO-8859-1")
-            df_existing = pd.read_csv(static_file, sep=";", header=None, encoding="ISO-8859-1")
+            df_existing = pd.read_csv(static_file, sep=";", header=None, encoding="utf-8")
             df = pd.concat([df_existing, df_new], ignore_index=True)
             df = df.drop_duplicates(subset=df.columns[0], keep='last')
-            df.to_csv(static_file, mode='w', index=False, sep=";", header=False)
+            df.to_csv(static_file, mode='w', index=False, sep=";", header=False, encoding="utf-8")
             os.remove(file)
         except:
             print("Failed to merge: {}".format(file))

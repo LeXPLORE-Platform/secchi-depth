@@ -35,7 +35,7 @@ class Secchi(GenericInstrument):
     def read_data(self, file):
         self.log.info("Reading data from {}".format(file), 1)
         try:
-            df = pd.read_csv(file, sep=";", header=None, encoding = "ISO-8859-1")
+            df = pd.read_csv(file, sep=";", header=None, encoding="utf-8")
             df.columns = ["id","date","hour","lowering","raising","secchi","person"]
             df["datetime"] = pd.to_datetime(df["date"] + df["hour"], format='%Y-%m-%d%H:%M', errors='coerce')
             df = df[df["datetime"].notna()]
